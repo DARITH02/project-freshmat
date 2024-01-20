@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Mat</title>
+    <script
+      src="https://kit.fontawesome.com/9152de16db.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/drink/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <style>
+    .slide-drink {
+      margin: auto;
+      margin-top: 50px;
+      position: relative;
+      /* background-color: blue; */
+      height: 500px;
+      display: block;
+    }
+    swiper-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <section class="container-fluid grid-nav-top">
+      <!-- location phone -->
+      <div class="nav-top-phone container-width">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-phone"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-envelope-open-text"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- location laptop -->
+      <div class="nav-top container-width">
+        <div class="nav-top-left">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-phone"></i>+885 719880959</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-envelope-open-text"></i
+                >chandarith002@gaiml.com</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-location-dot"></i>Phnom Phenh</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="nav-top-right">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end of location -->
+    </section>
+    <section class="container-fluid">
+      <!-- shearch phone -->
+      <div class="phone-search container-width shadow">
+        <ul>
+          <li>
+            <a href=""><img src="../pic/logo (1).png" alt="Logo" /></a>
+          </li>
+          <li>
+            <table class="search-field">
+              <tr>
+                <td>
+                  <input type="text" placeholder="Search products!!!" />
+                </td>
+                <td>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li><i class="fa-solid fa-headset"></i></li>
+        </ul>
+      </div>
+      <!-- end of search phone -->
+      <!-- search laptop -->
+      <nav class="menu-top menu-grid-1x3 container-width shadow">
+        <div class="logo">
+          <ul>
+            <li>
+              <a href="#"><img src="../pic/logo (1).png" alt="img" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="search">
+          <table class="search-field">
+            <tr>
+              <td>
+                <input type="text" placeholder="Search products!!!" />
+              </td>
+              <td>
+                <a href="#">Search</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="support-center">
+          <span><i class="fa-solid fa-headset"></i></span>
+          <ul>
+            <li>004 005 449</li>
+            <li>24/7 Support Center</li>
+          </ul>
+        </div>
+      </nav>
+      <!-- end of search laptop -->
+    </section>
+    <!-- menu bar -->
+    <div class="container-fluid fix-top">
+      <article
+        class="menu-bar container-width menu-grid-1x3 grid-1x2-small phone shadow"
+      >
+        <!-- screen phone -->
+        <ul class="menu-show-phone shadow">
+          <li><i class="fa-solid fa-house"></i></li>
+          <li><a href="../index.html">FRUITS</a></li>
+          <li><a href="">COFFEE</a></li>
+          <li><a href="">DRINK</a></li>
+          <li><a href="">MEET</a></li>
+        </ul>
+        <!-- end of phone -->
+        <div class="browse-cat">
+          <span class="category-show"
+            ><li class="material-symbols-outlined" style="font-size: 2rem">
+              browse
+            </li></span
+          >
+          <ul class="category">
+            <li class="material-symbols-outlined">browse</li>
+            <li class="cat-txt">Browe Category</li>
+            <li class="material-symbols-outlined">expand_more</li>
+          </ul>
+        </div>
+
+        <div class="bar">
+          <ul class="show-big-screen">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../food/index.html">FOOD</a></li>
+            <li><a href="#">DRINK</a></li>
+          </ul>
+          <!-- end of laptop -->
+          <!-- screen ipad -->
+          <ul class="icon-shall-show">
+            <li><a href="#">HOME</a></li>
+            <li><a href="">DRINK</a></li>
+            <li><a href="">COFFEE</a></li>
+            <li><a href="">MEET</a></li>
+            <li><a href="">MILK</a></li>
+          </ul>
+          <!-- end of screen ipad -->
+        </div>
+        <!-- togler phone -->
+        <span class="torkorl-bar"
+          ><i class="fa-solid fa-bars-staggered"></i
+        ></span>
+        <!-- user icon -->
+        <div class="user">
+          <ul>
+            <li class="onclick"><i class="fa-regular fa-user"></i></li>
+            <!-- click javascript -->
+            <span class="none-click"
+              ><ul>
+                <li>
+                  <img src="profilt/deverloper.jpg" alt="Profile" />
+                </li>
+                <li>User name : Ven Chandarith</li>
+                <li>Date of birth : 23-09-2002</li>
+                <li>Majer : Computer Sicein</li>
+                <li></li></ul
+            ></span>
+            <li><i class="fa-regular fa-heart"></i></li>
+            <li><i class="fa-regular fa-circle-question"></i></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="container-width slide-drink">
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="true"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide
+          ><img src="/drink/pic/benner coca.jpeg" alt="" />1</swiper-slide
+        >
+        <swiper-slide
+          ><img src="/drink/pic/benner coffee.jpeg" alt=""
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="/drink/pic/benner pesi.jpeg" alt=""
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="/drink/pic/benner milk.webp" alt=""
+        /></swiper-slide>
+      </swiper-container>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </div>
+    <!-- All products drink  -->
+
+    <section class="container-width container-drink">
+      <span class="menu-txt-drink">
+        <h2>Our Drinks</h2>
+        <p>All Drinks everyone can buy</p>
+      </span>
+      <div class="drink-grid-1x4">
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/pepsi/1.jpeg" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/pepsi/2.webp" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/pepsi/4.jpeg" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/pepsi/1.jpeg" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/milk/2.jpg" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/milk/3.jpg" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/milk/4.jpg" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/milk/1.jpg" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/milk/1.jpg" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/coffee2.jpeg" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>25$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/coffee1.webp" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity :
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>2$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/coca/2.webp" alt="egg" />
+        </div>
+        <div class="items-drink">
+          <span class="des-drink"> 0%OFF </span>
+          <span class="txt-detail">
+            <ul>
+              <li>
+                Detaile:
+                <h4>Lorem, ipsum dolor.</h4>
+              </li>
+              <li>
+                Quantity:
+                <p>1</p>
+              </li>
+              <li>
+                prices :
+                <p>2$</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+          </span>
+          <span class="container-btn">
+            <button class="btn btn-add">
+              Add cart <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn btn-buy">
+              Buy now <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </span>
+          <img src="/drink/pic/items/coca/1.jpeg" alt="egg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- our blog post -->
+
+    <footer class="container-fluid conainer-footer">
+      <div class="container-width footer">
+        <div class="serviced-footer">
+          <div class="box-serviced">
+            <ul>
+              <li><i class="fa-solid fa-car-side"></i></li>
+              <li>
+                <h3>Free Shipping</h3>
+                Worldwide
+              </li>
+            </ul>
+          </div>
+
+          <div class="box-serviced">
+            <ul>
+              <li><i class="fa-solid fa-square-phone"></i></li>
+              <li>
+                <h3>Helpline</h3>
+                +1256 25632 565
+              </li>
+            </ul>
+          </div>
+          <div class="box-serviced">
+            <ul>
+              <li><i class="fa-solid fa-headset"></i></li>
+              <li>
+                <h3>24/7 Support</h3>
+                Free For Customers
+              </li>
+            </ul>
+          </div>
+          <div class="box-serviced">
+            <ul>
+              <li>
+                <i class="fa-solid fa-right-left"></i>
+              </li>
+              <li>
+                <h3>Returns</h3>
+                30 Days Free Exchanges
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-grid-1x3">
+          <div class="item-footer">
+            <ul>
+              <li>
+                <a href="index.html"><img src="pic/logo (1).png" alt="" /></a>
+              </li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Hello to : <a href="#">chandarith002@gmail.com </a></li>
+              <li>
+                Follow :
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-footer">
+            <ul>
+              <li>
+                <h2>Category</h2>
+              </li>
+              <li>Milk & Dairy</li>
+              <li>Coffee & Drinks</li>
+              <li>Fresh & Fruits</li>
+            </ul>
+          </div>
+          <div class="item-footer">
+            <ul>
+              <li><h2>Contact Us</h2></li>
+              <li>About Us</li>
+              <li>Sign In</li>
+              <li>Sign Up</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="index.js"></script>
+</html>

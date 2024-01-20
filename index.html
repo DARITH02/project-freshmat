@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fresh Mat</title>
     <script
       src="https://kit.fontawesome.com/9152de16db.js"
       crossorigin="anonymous"
@@ -13,7 +13,43 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
+  <style>
+    .hero-slide {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      border-radius: 3px;
+      overflow: hidden;
+      z-index: 48;
+    }
+    .hero-slide > .swiper {
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
   <body>
     <section class="container-fluid grid-nav-top">
       <!-- location phone -->
@@ -158,16 +194,14 @@
 
         <div class="bar">
           <ul class="show-big-screen">
-            <li><a href="#">Gruit</a></li>
-            <li><a href="">DRINK</a></li>
-            <li><a href="">COFFEE</a></li>
-            <li><a href="">MEET</a></li>
-            <li><a href="">MILK</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="food/index.html">FOOD</a></li>
+            <li><a href="drink/index.html">DRINK</a></li>
           </ul>
           <!-- end of laptop -->
           <!-- screen ipad -->
           <ul class="icon-shall-show">
-            <li><a href="#">Gruit</a></li>
+            <li><a href="#">HOME</a></li>
             <li><a href="">DRINK</a></li>
             <li><a href="">COFFEE</a></li>
             <li><a href="">MEET</a></li>
@@ -207,17 +241,574 @@
         <div class="grid-1x2">
           <div class="menu-left">
             <ul>
-              <li>1</li>
-              <li>1</li>
-              <li>1</li>
-              <li>1</li>
-              <li>1</li>
+              <li>
+                <a href="">
+                  <span>
+                    <i
+                      class="fa-solid fa-fish"
+                      style="color: #49f74e; padding-right: 10px"
+                    ></i>
+                    <span>FIRST</span>
+                  </span>
+                  <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+              <li><a href="">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <!-- <li><a href="">4</a></li> -->
             </ul>
           </div>
-          <div>1</div>
+          <div class="hero-slide">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="pic/12.jpeg" alt="" /></div>
+                <div class="swiper-slide">
+                  <img src="pic/13.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide"><img src="pic/11.jpeg" alt="" /></div>
+                <div class="swiper-slide">
+                  <img src="pic/14.jpeg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                  el: ".swiper-pagination",
+                  type: "fraction",
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+            </script>
+          </div>
         </div>
       </section>
     </section>
+
+    <!-- main point -->
+
+    <div class="container-width main-poin">
+      <div class="main-grid-1x2">
+        <div class="item-main">
+          <span class="txt">
+            <p>Black Friday offer</p>
+            <h2>Organice Food</h2>
+            <h3>Up To 48% Off</h3>
+          </span>
+          <span class="btn-container">
+            <button class="btn btn-primary">
+              Shop Now
+              <i
+                class="fa-regular fa-circle-right"
+                style="padding-left: 10px"
+              ></i></button
+          ></span>
+          <img src="/pic/organice2.jpg" alt="pci organice" />
+        </div>
+        <div class="item-main">
+          <span class="txt">
+            <p>Black Friday offer</p>
+            <h2>Vegetables</h2>
+            <h3>Up To 48% Off</h3>
+          </span>
+          <span class="btn-container">
+            <button class="btn btn-primary">
+              Shop Now
+              <i
+                class="fa-regular fa-circle-right"
+                style="padding-left: 10px"
+              ></i></button
+          ></span>
+          <img src="pic/vegetable1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- All Category -->
+    <div class="container-width container-category">
+      <div class="all-category">
+        <span class="our-products">
+          <h6>Our Products</h6>
+          <h3>Our Fresh Products</h3>
+        </span>
+        <ul>
+          <li><a href="#">All Products</a></li>
+          <li><a href="#">Vegetables</a></li>
+          <li><a href="#">Fruits</a></li>
+          <li><a href="#">Nuts</a></li>
+          <li><a href="#">Drinks</a></li>
+          <li><a href="#">Root</a></li>
+        </ul>
+        <div class="all-cate-grid-1x4">
+          <div class="items">
+            <span class="icon-of-item">
+              <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-eye"></i></li>
+              </ul>
+            </span>
+            <img src="/pic/orang.jpg" alt="Orange" />
+            <span class="detail-items">
+              <p>Lemon Meat Bone</p>
+              <h6>$20.00 ̶$̶4̶0̶.̶0̶0̶</h6>
+              <button class="btn btn-items">Add To Cart</button>
+            </span>
+          </div>
+          <div class="items">
+            <span class="icon-of-item">
+              <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-eye"></i></li>
+              </ul>
+            </span>
+            <img src="/pic/orang.jpg" alt="Orange" />
+            <span class="detail-items">
+              <p>Lemon Meat Bone</p>
+              <h6>$20.00 ̶$̶4̶0̶.̶0̶0̶</h6>
+              <button class="btn btn-items">Add To Cart</button>
+            </span>
+          </div>
+          <div class="items">
+            <span class="icon-of-item">
+              <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-eye"></i></li>
+              </ul>
+            </span>
+            <img src="/pic/orang.jpg" alt="Orange" />
+            <span class="detail-items">
+              <p>Lemon Meat Bone</p>
+              <h6>$20.00 ̶$̶4̶0̶.̶0̶0̶</h6>
+              <button class="btn btn-items">Add To Cart</button>
+            </span>
+          </div>
+          <div class="items">
+            <span class="icon-of-item">
+              <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-eye"></i></li>
+              </ul>
+            </span>
+            <img src="/pic/orang.jpg" alt="Orange" />
+            <span class="detail-items">
+              <p>Lemon Meat Bone</p>
+              <h6>$20.00 ̶$̶4̶0̶.̶0̶0̶</h6>
+              <button class="btn btn-items">Add To Cart</button>
+            </span>
+          </div>
+          <div class="items">
+            <span class="icon-of-item">
+              <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-eye"></i></li>
+              </ul>
+            </span>
+            <img src="/pic/orang.jpg" alt="Orange" />
+            <span class="detail-items">
+              <p>Lemon Meat Bone</p>
+              <h6>$20.00 ̶$̶4̶0̶.̶0̶0̶</h6>
+              <button class="btn btn-items">Add To Cart</button>
+            </span>
+          </div>
+          <div class="items">
+            <span class="icon-of-item">
+              <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-eye"></i></li>
+              </ul>
+            </span>
+            <img src="/pic/orang.jpg" alt="Orange" />
+            <span class="detail-items">
+              <p>Lemon Meat Bone</p>
+              <h6>$20.00 ̶$̶4̶0̶.̶0̶0̶</h6>
+              <button class="btn btn-items">Add To Cart</button>
+            </span>
+          </div>
+          <div class="items">
+            <span class="icon-of-item">
+              <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-eye"></i></li>
+              </ul>
+            </span>
+            <img src="/pic/orang.jpg" alt="Orange" />
+            <span class="detail-items">
+              <p>Lemon Meat Bone</p>
+              <h6>$20.00 ̶$̶4̶0̶.̶0̶0̶</h6>
+              <button class="btn btn-items">Add To Cart</button>
+            </span>
+          </div>
+          <div class="items">
+            <span class="icon-of-item">
+              <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-eye"></i></li>
+              </ul>
+            </span>
+            <img src="/pic/orang.jpg" alt="Orange" />
+            <span class="detail-items">
+              <p>Lemon Meat Bone</p>
+              <h6>$20.00 ̶$̶4̶0̶.̶0̶0̶</h6>
+              <button class="btn btn-items">Add To Cart</button>
+            </span>
+          </div>
+          <div class="items">
+            <span class="icon-of-item">
+              <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-regular fa-eye"></i></li>
+              </ul>
+            </span>
+            <img src="/pic/orang.jpg" alt="Orange" />
+            <span class="detail-items">
+              <p>Lemon Meat Bone</p>
+              <h6>$20.00 ̶$̶4̶0̶.̶0̶0̶</h6>
+              <button class="btn btn-items">Add To Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Special products -->
+    <div class="container-width special-pro-contianer">
+      <div class="special-contian">
+        <span class="txt-special">
+          <h6>Special Products</h6>
+          <h2>Our Special Products</h2>
+        </span>
+        <div class="spectial-grid-1x3">
+          <div class="special-left">
+            <span class="special-txt">
+              <h6>Weekly Discounts on</h6>
+              <h2>Fruits and Vegetables</h2>
+              <p>
+                It is a long established fact that a reader acted by the
+                readable content.
+              </p>
+              <button class="btn btn-items">Shop Now</button>
+            </span>
+            <img
+              src="pic/fruits and vegetable.jpg"
+              alt="Fruits and vegetable"
+            />
+          </div>
+          <div class="special-items-right">
+            <div class="sp-item">
+              <span class="sp-discount"> 50% </span>
+              <img src="pic/apple.jpg" alt=" sp-item apple" />
+              <span class="sp-txt">
+                <h5>Butter Garlic Crab</h5>
+                <span>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>200$</p>
+
+                  <p>20$</p>
+                </span>
+              </span>
+            </div>
+            <div class="sp-item">
+              <span class="sp-discount"> 50% </span>
+              <img src="pic/apple.jpg" alt=" sp-item apple" />
+              <span class="sp-txt">
+                <h5>Butter Garlic Crab</h5>
+                <span>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>200$</p>
+
+                  <p>20$</p>
+                </span>
+              </span>
+            </div>
+            <div class="sp-item">
+              <span class="sp-discount"> 50% </span>
+              <img src="pic/apple.jpg" alt=" sp-item apple" />
+              <span class="sp-txt">
+                <h5>Butter Garlic Crab</h5>
+                <span>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>200$</p>
+
+                  <p>20$</p>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="special-items-right">
+            <div class="sp-item">
+              <span class="sp-discount"> 50% </span>
+              <img src="pic/apple.jpg" alt=" sp-item apple" />
+              <span class="sp-txt">
+                <h5>Butter Garlic Crab</h5>
+                <span>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>200$</p>
+
+                  <p>20$</p>
+                </span>
+              </span>
+            </div>
+            <div class="sp-item">
+              <span class="sp-discount"> 50% </span>
+              <img src="pic/apple.jpg" alt=" sp-item apple" />
+              <span class="sp-txt">
+                <h5>Butter Garlic Crab</h5>
+                <span>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>200$</p>
+
+                  <p>20$</p>
+                </span>
+              </span>
+            </div>
+            <div class="sp-item">
+              <img src="pic/apple.jpg" alt=" sp-item apple" />
+              <span class="sp-txt">
+                <h5>Lorem, ipsum dolor.</h5>
+                <span>
+                  <p>200$</p>
+                  <p>20$</p>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- our blog post -->
+    <article class="container-width blog-post">
+      <span class="blog-txt">
+        <p>Our Blog Post</p>
+        <h3>Latest News & Articles</h3>
+      </span>
+
+      <div class="blog-post-1x3">
+        <div class="blog-items">
+          <img src="pic/pic blog one.jpg" alt="picture blog one" />
+          <div class="box-pupup-blog-item">
+            <div class="item-pupup">
+              <span class="txt-contianer-pupup">
+                <ul>
+                  <li>Drink</li>
+                  <li>
+                    <i class="fa-regular fa-user"></i>
+                    Admin
+                  </li>
+                </ul>
+                <p>Freshly Served Exploring</p>
+              </span>
+              <span class="more-pupup">
+                <ul>
+                  <li>
+                    <button class="btn btn-read-more">
+                      Read More <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-read-more">
+                      <i class="fa-solid fa-comment-dots"></i>
+                      Read More
+                    </button>
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="blog-items">
+          <img src="pic/blog pic two.jpg" alt="picture blog one" />
+          <div class="box-pupup-blog-item">
+            <div class="item-pupup">
+              <span class="txt-contianer-pupup">
+                <ul>
+                  <li>Drink</li>
+                  <li>
+                    <i class="fa-regular fa-user"></i>
+                    Admin
+                  </li>
+                </ul>
+                <p>Freshly Served Exploring</p>
+              </span>
+              <span class="more-pupup">
+                <ul>
+                  <li>
+                    <button class="btn btn-read-more">
+                      Read More <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-read-more">
+                      <i class="fa-solid fa-comment-dots"></i>
+                      Read More
+                    </button>
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="blog-items">
+          <img src="pic/blog pic three.jpg" alt="picture blog one" />
+          <div class="box-pupup-blog-item">
+            <div class="item-pupup">
+              <span class="txt-contianer-pupup">
+                <ul>
+                  <li>Drink</li>
+                  <li>
+                    <i class="fa-regular fa-user"></i>
+                    Admin
+                  </li>
+                </ul>
+                <p>Freshly Served Exploring</p>
+              </span>
+              <span class="more-pupup">
+                <ul>
+                  <li>
+                    <button class="btn btn-read-more">
+                      Read More <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-read-more">
+                      <i class="fa-solid fa-comment-dots"></i>
+                      Read More
+                    </button>
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer class="container-fluid conainer-footer">
+      <div class="container-width footer">
+        <div class="serviced-footer">
+          <div class="box-serviced">
+            <ul>
+              <li><i class="fa-solid fa-car-side"></i></li>
+              <li>
+                <h3>Free Shipping</h3>
+                Worldwide
+              </li>
+            </ul>
+          </div>
+
+          <div class="box-serviced">
+            <ul>
+              <li><i class="fa-solid fa-square-phone"></i></li>
+              <li>
+                <h3>Helpline</h3>
+                +1256 25632 565
+              </li>
+            </ul>
+          </div>
+          <div class="box-serviced">
+            <ul>
+              <li><i class="fa-solid fa-headset"></i></li>
+              <li>
+                <h3>24/7 Support</h3>
+                Free For Customers
+              </li>
+            </ul>
+          </div>
+          <div class="box-serviced">
+            <ul>
+              <li>
+                <i class="fa-solid fa-right-left"></i>
+              </li>
+              <li>
+                <h3>Returns</h3>
+                30 Days Free Exchanges
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-grid-1x3">
+          <div class="item-footer">
+            <ul>
+              <li>
+                <a href="index.html"><img src="pic/logo (1).png" alt="" /></a>
+              </li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Hello to : <a href="#">chandarith002@gmail.com </a></li>
+              <li>
+                Follow :
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-footer">
+            <ul>
+              <li>
+                <h2>Category</h2>
+              </li>
+              <li>Milk & Dairy</li>
+              <li>Coffee & Drinks</li>
+              <li>Fresh & Fruits</li>
+            </ul>
+          </div>
+          <div class="item-footer">
+            <ul>
+              <li><h2>Contact Us</h2></li>
+              <li>About Us</li>
+              <li>Sign In</li>
+              <li>Sign Up</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+
   <script src="index.js"></script>
 </html>
